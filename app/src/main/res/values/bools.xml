@@ -1,0 +1,4 @@
+<resources>
+    <!-- 画面幅が狭い(折りたたみ時など)場合は1ペイン表示 -->
+    <bool name="two_pane">false</bool>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <!-- 画面幅が600dp以上(フォールド端末の展開時やタブレットなど)は2ペイン表示 -->
+    <bool name="two_pane">true</bool>
+</resources>

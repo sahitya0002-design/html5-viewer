@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HTML5 ビュアー</string>
+    <string name="select_folder">フォルダを選択</string>
+    <string name="add_folder">＋フォルダ</string>
+    <string name="no_html_found">HTMLファイルが見つかりませんでした</string>
+    <string name="open_folder_failed">フォルダを開けませんでした</string>
+    <string name="search_hint">ファイル名で検索</string>
+    <string name="favorites_only">お気に入りのみ表示</string>
+    <string name="theme_toggle">🌓</string>
+    <string name="folder_not_found">フォルダが見つかりません(削除された可能性があります)</string>
+    <string name="no_folders_yet">まだフォルダが追加されていません。「＋フォルダ」から追加してください</string>
+    <string name="theme_mode_system">テーマ: 端末設定に従う</string>
+    <string name="theme_mode_light">テーマ: ライト</string>
+    <string name="theme_mode_dark">テーマ: ダーク</string>
+    <string name="quick_access_label">クイックアクセス:</string>
+    <string name="shortcut_downloads">📥 ダウンロード</string>
+    <string name="shortcut_documents">📄 ドキュメント</string>
+    <string name="shortcut_pictures">🖼 ピクチャ</string>
+    <string name="removable_storage_label">リムーバブルストレージ(SD/USB):</string>
+    <string name="removable_storage_generic">外部ストレージ</string>
+    <string name="removable_storage_none">SDカード/USBメモリが見つかりません(挿入して再度お試しください)</string>
+</resources>
