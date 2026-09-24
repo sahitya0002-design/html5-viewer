@@ -1,16 +1,19 @@
-﻿plugins {
+plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
     namespace = "com.example.html5viewer"
-    compileSdk = 37 // Android 17 (API level 37)
+
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.html5viewer"
+
         minSdk = 24
-        targetSdk = 37 // Android 17 (API level 37)
+        targetSdk = 36
+
         versionCode = 1
         versionName = "1.0"
     }
@@ -18,6 +21,7 @@ android {
     signingConfigs {
         create("release") {
             val keystoreFile = System.getenv("KEYSTORE_FILE")
+
             if (!keystoreFile.isNullOrBlank()) {
                 storeFile = file(keystoreFile)
                 storePassword = System.getenv("KEYSTORE_PASSWORD")
@@ -30,10 +34,18 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            val releaseSigning = if (System.getenv("KEYSTORE_FILE").isNullOrBlank()) null else signingConfigs.getByName("release")
+
+            val releaseSigning =
+                if (System.getenv("KEYSTORE_FILE").isNullOrBlank()) {
+                    null
+                } else {
+                    signingConfigs.getByName("release")
+                }
+
             if (releaseSigning != null) {
                 signingConfig = releaseSigning
             }
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
