@@ -143,3 +143,4 @@ Html5Viewer/
 - 単一ファイル(フォルダではなく1ファイル)を選ばせたい場合は
   `ActivityResultContracts.OpenDocument()` に変更できますが、その場合
   同じフォルダ内の相対リソース読み込みはできなくなります。
+Build test
